@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { frontend_EndPoint } from '../utils/constants';
+import { Social_Link_EndPoint } from '../utils/constants';
 import { setSocialLinks } from '../store/SocialLinkSlice';
 
 const useSocialLinks = () => {
@@ -11,9 +11,7 @@ const useSocialLinks = () => {
    const fetchSocialLinks = async () => {
       try {
          if (!links) {
-            const response = await axios.get(
-               `${frontend_EndPoint}/social-links`,
-            );
+            const response = await axios.get(Social_Link_EndPoint);
             const data = response.data.link;
 
             dispatch(setSocialLinks(data));
