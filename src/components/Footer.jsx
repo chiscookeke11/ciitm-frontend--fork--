@@ -34,7 +34,7 @@ const Footer = () => {
             </p>
          </div>
 
-         <div className='right w-[50%] max-[999px]:w-full h-full flex items-center justify-center gap-10 flex-wrap'>
+         <div className='right w-[50%] max-[999px]:w-full h-full flex items-start justify-center gap-10 flex-wrap'>
             <div className='flex max-[599px]:w-[25%] items-center justify-evenly flex-col gap-4 mb-4 mx-8'>
                <p className='text-[1vw] max-[599px]:text-[4.5vw] text-[#333] font-bold'>
                   Navigation
