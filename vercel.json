@@ -4,5 +4,12 @@
          "source": "/api/(.*)",
          "destination": "https://ciitm-backend.onrender.com/api/$1"
       }
+   ],
+   "redirects": [
+      {
+         "source": "/(.*)",
+         "destination": "/index.html",
+         "statusCode": 200
+      }
    ]
 }
